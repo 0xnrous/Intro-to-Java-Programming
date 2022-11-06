@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /*
 (Conversions between Celsius and Fahrenheit) Write a class that contains the following two methods:
 /** Convert from Celsius to Fahrenheit**/
@@ -19,22 +17,12 @@ public class Ass3 {
         double cel= input.nextDouble();
         System.out.println("Enter fahrenheit double number ");
         double fer= input.nextDouble();
-        celsiusToFahrenheit(cel);
-        fahrenheitToCelsius(fer);
-        System.out.println(fahrenheitToCelsius(fer) + " and " + celsiusToFahrenheit(cel) );
+        System.out.println("Converted fahrenheitToCelsius is : " + fahrenheitToCelsius(fer) + " and converted celsiusToFahrenheit is :  " + celsiusToFahrenheit(cel) );
     }
     public static double celsiusToFahrenheit(double cel){
-        double fer;
-        double x= 32;
-        fahrenheitToCelsius(double fer);
-        cel = (5.0 / 9) * (fer- x);
-
-       System.out.println("Converted Number is : " + cel + "degree");
+            return (9.0/5)*cel +32;
     }
     public static double fahrenheitToCelsius(double fer){
-        double cel;
-        celsiusToFahrenheit(double cel);
-        fer = (9.0 / 5) * cel + 32;
-        System.out.println("Converted Number is : " + fer + "degree");
+        return (5.0/9)*(fer-32);
     }
 }
